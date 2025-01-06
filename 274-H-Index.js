@@ -3,6 +3,6 @@
  * @return {number}
  */
 var hIndex = function(citations) {
-    return citations.sort((a, b) => b - a)
-        .filter((citation, index) => citation > index).length;
+    return citations.sort((a,b)=> b-a)
+    .filter((citation, index)=> citation > index).length;
 };
