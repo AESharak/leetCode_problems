@@ -4,8 +4,23 @@
  * @return {number}
  */
 var countConsistentStrings = function(allowed, words) {
-    return words.filter(word => 
-        // Check if every character in the word is included in allowed
-        [...word].every(char => allowed.includes(char))
-    ).length;
+    let count = 0;
+    
+    for (let word of words) {
+        let isConsistent = true;
+        
+        // Check each character in the word
+        for (let char of word) {
+            if (!allowed.includes(char)) {
+                isConsistent = false;
+                break;
+            }
+        }
+        
+        if (isConsistent) {
+            count++;
+        }
+    }
+    
+    return count;
 };
