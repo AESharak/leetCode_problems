@@ -4,7 +4,7 @@
  */
 var differenceOfSum = function (nums) {
   let digitArr = [];
-  nums.slice().forEach((num) => {
+  nums.forEach((num) => {
     let digits = num.toString().split("");
     for (const digit of digits) {
       digitArr.push(digit);
