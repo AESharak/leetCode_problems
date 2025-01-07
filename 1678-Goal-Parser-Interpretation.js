@@ -3,5 +3,6 @@
  * @return {string}
  */
 var interpret = function (command) {
-  return command.replaceAll("()", "o").replaceAll("(", "").replaceAll(")", "");
+      return command.replaceAll("()", "o").replaceAll("(", "").replaceAll(")", "");
+
 };
