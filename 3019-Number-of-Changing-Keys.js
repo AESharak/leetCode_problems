@@ -3,7 +3,7 @@
  * @return {number}
  */
 var countKeyChanges = function (s) {
-  const lowerCaseSSplitted = s.toLowerCase().split("");
+  const lowerCaseSSplitted = s.toLowerCase();
   let temp;
   let count = -1;
   for (let i = 0; i < lowerCaseSSplitted.length; i++) {
