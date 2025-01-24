@@ -4,7 +4,8 @@
  */
 var maxAdjacentDistance = function (nums) {
   let maxDifference = Math.abs(nums[0] - nums.at(-1));
-  for (let i = 0; i < nums.length; i++) {
+  let numsLength = nums.length;
+  for (let i = 0; i < numsLength; i++) {
     const difference = Math.abs(nums[i] - nums[i + 1]);
     if (difference > maxDifference) maxDifference = difference;
   }
